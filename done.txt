@@ -1,0 +1,15 @@
+<!--DONE EXERCISES
+1) Create a Jumbotron section with a quick explanation / image of the website.
+
+Make it appear with a fade-in animation effect when the page loads.
+
+2) Use a Bootstrap Card to contain every album in the favorite list you previously created.
+
+Use the elements of a card bootstrap gives you, to display nicely the album information such as: album title, artist, year, etc..
+
+4) Create a new section with an album tracklist inside a Bootstrap table. The row colors of the table must be alternated. There should be a column for the track order number, one for the title, one for the artist name and one for the track duration. (you can also add extra columns)
+
+6) Add an “Add Track” button under the tracklist of the album.
+
+It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look as if the button was elevating itself up. (you can search for more effects and add more)
+-->

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>BS-D4</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="div-lg"></div>
+    </nav>
+    <div class="jumbotron jumbotron fade show active">
+        <div class="container">
+          <h1 class="display-4">Albums Emporium</h1>
+          <p class="lead">This site is used to talk about my favorite and least favorite albums.</p>
+        </div>
+      </div>
+      <section class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="card mb-2"><img src="https://picsum.photos/300/250" alt="" style="max-height: 250px; max-width: 310px;">
+                                <div class="card-body">
+                                    <h3 class="card-title">This title</h3>
+                                    <h5 class="card-artist">Artist: <strong>Best Singer</strong></h5>
+                                    <h5 class="card-genre">Genre: <strong>Every Genre</strong></h5>
+                                    <h5 class="card-duration">Duration: <strong>Long</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="card mb-2"><img src="https://picsum.photos/300/250" alt="" style="max-height: 250px; max-width: 310px;">
+                                <div class="card-body">
+                                    <h3 class="card-title">This title</h3>
+                                    <h5 class="card-artist">Artist: <strong>Best Singer</strong></h5>
+                                    <h5 class="card-genre">Genre: <strong>Every Genre</strong></h5>
+                                    <h5 class="card-duration">Duration: <strong>Long</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="card mb-2">
+                                <img src="https://picsum.photos/300/250" alt="" style="max-height: 250px; max-width: 310px;">
+                                <div class="card-body">
+                                    <h3 class="card-title">This title</h3>
+                                    <h5 class="card-artist">Artist: <strong>Best Singer</strong></h5>
+                                    <h5 class="card-genre">Genre: <strong>Every,Genre</strong></h5>
+                                    <h5 class="card-duration">Duration: <strong>Long</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+      </section>
+      <section class="container" id="tracklist">
+        <h2>Album Tracklist</h2>
+        <div class="row bg-secondary text-white">
+          <div class="col-sm">
+            Track No.
+          </div>
+          <div class="col-sm">
+            Title
+          </div>
+          <div class="col-sm">
+            Artist Name
+          </div>
+          <div class="col-sm">
+            Track Duration
+          </div>
+        </div>
+        <div class="row bg-warning text-white">
+            <div class="col-sm">
+              1
+            </div>
+            <div class="col-sm">
+              Random Title
+            </div>
+            <div class="col-sm">
+              Weird Name
+            </div>
+            <div class="col-sm">
+              Long Duration
+            </div>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+          <div class="row bg-info text-white">
+            <div class="col-sm">
+              2
+            </div>
+            <div class="col-sm">
+              Funny Title
+            </div>
+            <div class="col-sm">
+              Scary Name
+            </div>
+            <div class="col-sm">
+              Very Short Duration
+            </div>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+          <div class="row bg-success text-info">
+            <div class="col-sm">
+              2
+            </div>
+            <div class="col-sm">
+                isTitle === true?
+            </div>
+            <div class="col-sm">
+              [Object object]
+            </div>
+            <div class="col-sm">
+              Null
+            </div>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+
+          <button type="button" class="btn bg-danger mt-2" id="addtrack" data-toggle ="modal" data-target="#trackModal">Add Track</button>
+
+          <div class="modal fade" id="trackModal" tabindex="-1" role="dialog" aria-labelledby="addTrackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="addTrackLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-trackNumber">
+                    <input type="number">
+                  </div>
+                  <div class="modal-trackTitle">
+                    <input type="text">
+                  </div>
+                  <div class="modal-artistName">
+                    <input type="text">
+                  </div>
+                  <div class="modal-trackDuration">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>
+<!--EXERCISES:
+
+3) For every album in the favorite list, attach a badge on the top-left corner of the album with the genre of the music.<=== NOT FULLY DONE ===>
+
+5) Add a DELETE button (bootstrap btn danger) at the end of each row of the tracklist. Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)
+
+<== I DON'T UNDERSTAND WHY IT'S NOT WORKING, NO ERRORS EITHER??? ==>
+
+
+7) On the click of “Add Track” button, a modal should appear.
+(check in the documentation the modal + button example)
+The modal shall contain single input fields (avoid using a <form> to wrap the inputs) with:
+
+Track number
+Track title
+Artist Name
+Track duration
+The fields should be inside an Input Group and divided in 2 columns.
+
+
+
+ 
+
+EXTRA 8)
+
+The modal should contain 2 buttons at the bottom:
+
+Add => Adds a new track in the tracklist with the data from the input fields. (requires DOM manipulation)
+Close => closes the modal
+When a new track is added, notify the user with an alert message containing the name of the track
+
+ 
+
+CSS EXTRA
+
+For the delete buttons you’ve created on EX 5 make only one visible at a time, the delete button should become visible only when its row gets hovered. Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.-->
